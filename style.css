@@ -134,10 +134,10 @@ body {
 .page_content .ans_page_content .ans_page_body .publish_date {
   font-size: .85rem;
   color: #34495E;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 10px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .page_content .ans_page_content .ans_page_body .publish_date i {
