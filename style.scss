@@ -7,6 +7,16 @@ $main_color: #42b983;
 $second_color: #34495e;
 $bg_color: #f3f3f3;
 
+
+ul{
+    padding: 0 !important;
+    li{
+        list-style: none;
+    }
+}
+a{
+    text-decoration: none;
+}
 .form-control:focus {
   color: #212529;
   background-color: #fff;
@@ -279,4 +289,46 @@ body {
       }
     }
   }
+}
+
+
+footer{
+    background-color: $second_color;
+    margin-top: 50px;
+    padding: 50px 0 20px 0;
+    text-align: center;
+    h2{
+        text-align: center;
+       // margin: 0 !important;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+    }
+    img{
+      width: 150px;
+      margin-bottom: 15px;
+    }
+    p{
+        font-size: 1rem;
+        color: #fff;
+    }
+    ul{
+        li{
+            padding: 5px 0;
+            a{
+                color: #fff;
+                font-size: 1rem;
+            }
+            a:hover{
+                color:$main_color
+            }
+        }
+    }
+    .copyright{
+      margin-top: 20px;
+      padding: 20px 0 0 0;
+      border-top: 1px solid $main_color;
+      p{
+        color: #42b983;
+      }
+    }
 }
