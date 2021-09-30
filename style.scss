@@ -131,6 +131,7 @@ body {
         color: $second_color;
       }
       .publish_date {
+          margin: 10px 0;
         font-size: 0.85rem;
         // justify-content: center;
         color: $second_color;
@@ -189,7 +190,7 @@ body {
 
 //slider section start
 
-.ask_question_btn {
+.common-button {
   background-color: $main_color;
   color: #fff;
   font-weight: 500;
@@ -199,7 +200,7 @@ body {
   border-radius: 5px;
   border: none;
 }
-.ask_question_btn:hover {
+.common-button:hover {
   background-color: $second_color;
   color: white;
 }
@@ -269,6 +270,10 @@ body {
             color: $second_color;
             font-size: 1rem;
             font-weight: 500;
+          }
+          .point_btn{
+            background-color: $main_color;
+            color: #fff;
           }
         }
       }
