@@ -1,18 +1,28 @@
+// basic setup for website
+$main_color: #42b983;
+$second_color: #34495e;
+$bg_color: #f3f3f3;
 * {
   margin: 0;
   padding: 0;
 }
+::selection{
+  background-color: $main_color;
+  color: #fff;
+}
 
-$main_color: #42b983;
-$second_color: #34495e;
-$bg_color: #f3f3f3;
-
-
+.underline{
+  width: 50px;
+  height: 2px;
+  border-radius: 5px;
+  background: $main_color;
+  margin: 20px auto;
+}
 ul{
     padding: 0 !important;
     li{
         list-style: none;
-    }
+}
 }
 a{
     text-decoration: none;
@@ -43,9 +53,11 @@ p {
 body {
   background-color: $bg_color;
 }
+// basic setup end here
+
+
 
 //navbar section start
-
 .navbar {
   border-bottom: 3px solid #34495e;
   img {
@@ -291,44 +303,37 @@ body {
   }
 }
 
-
+// the footer section start here
 footer{
     background-color: $second_color;
     margin-top: 50px;
     padding: 50px 0 20px 0;
-    text-align: center;
+    color: #fff;
     h2{
         text-align: center;
-       // margin: 0 !important;
-        margin-bottom: 20px;
         font-size: 1.5rem;
     }
     img{
       width: 150px;
       margin-bottom: 15px;
     }
-    p{
-        font-size: 1rem;
-        color: #fff;
-    }
     ul{
         li{
             padding: 5px 0;
             a{
-                color: #fff;
                 font-size: 1rem;
+                color: #fff;
             }
             a:hover{
-                color:$main_color
+                color:$main_color;
             }
         }
     }
     .copyright{
-      margin-top: 20px;
       padding: 20px 0 0 0;
-      border-top: 1px solid $main_color;
+      border-top: 2px solid $main_color;
       p{
-        color: #42b983;
+        color: #fff;
       }
     }
 }
