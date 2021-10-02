@@ -2,6 +2,7 @@
 $main_color: #42b983;
 $second_color: #34495e;
 $bg_color: #f3f3f3;
+$border_color: #5864706c;
 * {
   margin: 0;
   padding: 0;
@@ -10,13 +11,12 @@ $bg_color: #f3f3f3;
   background-color: $main_color;
   color: #fff;
 }
-
 .underline{
   width: 50px;
   height: 2px;
   border-radius: 5px;
   background: $main_color;
-  margin: 20px auto;
+  margin: 0 auto 20px auto;
 }
 ul{
     padding: 0 !important;
@@ -26,25 +26,26 @@ ul{
 }
 a{
     text-decoration: none;
+    transition: 0.5s;
+}
+.form-control{
+  color: $second_color;
+  border: 2px solid $main_color;
 }
 .form-control:focus {
-  color: #212529;
-  background-color: #fff;
-  border-color: #86b7fe;
-  outline: 0;
   box-shadow: none !important;
+  border: 2px solid $second_color;
 }
 .btn-check:focus + .btn,
 .btn:focus, .form-check-input:focus {
   outline: 0;
   box-shadow: none !important;
 }
-
 h1 {
   font-size: 1.8rem;
 }
 h2 {
-  font-size: 1.25rem;
+  font-size: 1.50rem;
   color: $main_color;
 }
 p {
@@ -53,170 +54,11 @@ p {
 body {
   background-color: $bg_color;
 }
-// basic setup end here
-
-
-
-//navbar section start
-.navbar {
-  border-bottom: 3px solid #34495e;
-  img {
-    width: 100px;
-  }
-  .btn {
-    background: #42b983;
-    color: #fff;
-    font-weight: 600;
-  }
-  .btn:hover {
-    color: #fff;
-  }
-  .nav-link {
-    font-weight: 600;
-    transition: 0.5s;
-    color: #34495e !important;
-  }
-  .active-color {
-    color: #42b983 !important;
-  }
-  .nav-link:hover {
-    color: #42b983 !important;
-  }
-  nav {
-    border-bottom: 3px solid #34495e;
-  }
-}
-
-//Question section in top
-
-.top_question {
-  background-color: #42b983;
-  min-height: 40px;
-  padding: 20px 60px;
-  z-index: 19;
-  box-sizing: border-box;
-  text-align: left;
-
-  .top_question_body {
-    h1 {
-      margin-bottom: 10px;
-      color: #fff;
-    }
-    p {
-      font-weight: 400;
-      color: #fff;
-    }
-  }
-}
-//answer section start//
-.answer-section {
-  margin-top: 2rem;
-}
-
-.page_content {
-  .ans_page_content {
-    margin-bottom: 30px;
-    background-color: #fff;
-    padding: 0.75rem;
-    box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.13);
-
-    .ans_page_title {
-      padding: 10px;
-
-      border-bottom: 3px solid #5864706c;
-      h2 {
-        font-size: 1.25rem;
-        color: $main_color;
-      }
-    }
-
-    .ans_page_body {
-      margin-top: 10px;
-      padding: 20px;
-
-      .ans_page_left {
-        margin-left: -15px;
-      }
-      .author_img {
-        justify-content: center;
-        text-align: center;
-        padding: 0;
-        // width: 50px;
-        img {
-          border-radius: 50px;
-          border: 2px solid $second_color;
-        }
-      }
-      .author_name {
-        font-size: 1rem;
-        font-weight: 500;
-        color: $second_color;
-      }
-      .publish_date {
-          margin: 10px 0;
-        font-size: 0.85rem;
-        // justify-content: center;
-        color: $second_color;
-        //align-items: right;
-        margin-bottom: 10px;
-        justify-content: end;
-        // padding: 10px;
-        i {
-          padding: 0 10px;
-          font-size: 1rem;
-        }
-      }
-      .ans_body_content {
-        font-size: 1rem;
-        color: $second_color;
-      }
-    }
-  }
-}
-
-.leave_answer {
-  margin-bottom: 30px;
-  background-color: #fff;
-  padding: 0.75rem;
-  box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.13);
-  .leave_answer_title {
-    padding: 10px;
-
-    border-bottom: 3px solid #5864706c;
-  }
-  .leave_answer_form {
-    margin-top: 20px;
-
-    .form-label {
-      margin-bottom: 0.5rem;
-      font-size: 1rem;
-      font-weight: 500;
-    }
-
-    .form-control {
-   
-      font-weight: 500;
-      line-height: 1.5;
-      color: $second_color;
-      background-color: #f3f3f3;
-         border: 1px solid $main_color;
-
-    }
-    .form-check{
-
-        font-size: 1rem;
-        font-weight: 500;
-    }
-  }
-}
-
-//slider section start
-
 .common-button {
   background-color: $main_color;
   color: #fff;
   font-weight: 500;
-  padding: 10px;
+  padding: 6px 16px;
   text-align: center;
   font-size: 1rem;
   border-radius: 5px;
@@ -227,7 +69,98 @@ body {
   color: white;
 }
 
-//slider login section css
+// basic setup end here
+
+//navbar section start
+.navbar {
+  border-bottom: 3px solid $second_color;
+  img {
+    width: 100px;
+  }
+  .nav-link {
+    font-weight: 600;
+    color: $second_color !important;
+  }
+  .active-color {
+    color: $main_color !important;
+  }
+  .nav-link:hover {
+    color: $main_color !important;
+  }
+  nav {
+    border-bottom: 3px solid $second_color;
+  }
+}
+
+//Question section in top
+.top_question {
+  background-color: $main_color;
+  color: #fff;
+  min-height: 40px;
+  padding: 20px 60px;
+}
+
+//answer section start//
+.answer-section {
+  margin-top: 2rem;
+  .page_content {
+    .ans_page_content {
+      // margin-bottom: 30px;
+      background-color: #fff;
+      padding: 0.75rem;
+      box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.13);
+
+      .ans_page_title {
+        padding: 10px;
+        border-bottom: 3px solid $border_color;
+        h2 {
+          font-size: 1.25rem;
+          color: $main_color;
+        }
+      }
+      .ans_page_body {
+        color: $second_color;
+        margin-top: 10px;
+        padding: 20px;
+        border-bottom: 2px solid $border_color;
+        &:last-child{
+          border-bottom: none;
+        }
+        .author_img {
+          padding: 0;
+          img {
+            border-radius: 50%;
+            width: 100%;
+            border: 2px solid $second_color;
+          }
+        }
+        .publish_date {
+          padding: 10px 0;
+          margin-bottom: 10px;
+          i {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//leave answer form sectio start here
+.leave_answer {
+  background-color: #fff;
+  padding: 0.75rem;
+  box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.13);
+  .leave_answer_title {
+    padding: 10px 0;
+    border-bottom: 3px solid $border_color;
+  }
+}
+
+//sidebar section start
+
+//sidebar login section css
 
 .login_reg_slider {
   margin-top: 20px;
@@ -238,7 +171,7 @@ body {
   .login_title {
     padding: 10px;
     color: $main_color;
-    border-bottom: 2px solid #5864706c;
+    border-bottom: 2px solid $border_color;
     h2 {
       font-size: 1.25rem;
       //text-align: center;
@@ -260,14 +193,14 @@ body {
 
   .slider_point_title {
     padding: 15px;
-    border-bottom: 2px solid #5864706c;
+    border-bottom: 2px solid $border_color;
   }
   .slider_point_body {
     margin: 10px 0;
     padding: 10px;
     .slider_card {
       //padding: 10px;
-      border-bottom: 1px solid #5864706c;
+      border-bottom: 1px solid $border_color;
       .card {
         //border-bottom: 1px solid;
         border: none !important;
