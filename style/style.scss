@@ -1,3 +1,10 @@
+//page import
+
+@import "header";
+@import "footer";
+
+
+
 // basic setup for website
 $main_color: #42b983;
 $second_color: #34495e;
@@ -71,26 +78,6 @@ body {
 
 // basic setup end here
 
-//navbar section start
-.navbar {
-  border-bottom: 3px solid $second_color;
-  img {
-    width: 100px;
-  }
-  .nav-link {
-    font-weight: 600;
-    color: $second_color !important;
-  }
-  .active-color {
-    color: $main_color !important;
-  }
-  .nav-link:hover {
-    color: $main_color !important;
-  }
-  nav {
-    border-bottom: 3px solid $second_color;
-  }
-}
 
 //Question section in top
 .top_question {
@@ -236,37 +223,3 @@ body {
   }
 }
 
-// the footer section start here
-footer{
-    background-color: $second_color;
-    margin-top: 50px;
-    padding: 50px 0 20px 0;
-    color: #fff;
-    h2{
-        text-align: center;
-        font-size: 1.5rem;
-    }
-    img{
-      width: 150px;
-      margin-bottom: 15px;
-    }
-    ul{
-        li{
-            padding: 5px 0;
-            a{
-                font-size: 1rem;
-                color: #fff;
-            }
-            a:hover{
-                color:$main_color;
-            }
-        }
-    }
-    .copyright{
-      padding: 20px 0 0 0;
-      border-top: 2px solid $main_color;
-      p{
-        color: #fff;
-      }
-    }
-}

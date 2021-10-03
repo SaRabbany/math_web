@@ -1,0 +1,20 @@
+//navbar section start
+.navbar {
+  border-bottom: 3px solid $second_color;
+  img {
+    width: 100px;
+  }
+  .nav-link {
+    font-weight: 600;
+    color: $second_color !important;
+  }
+  .active-color {
+    color: $main_color !important;
+  }
+  .nav-link:hover {
+    color: $main_color !important;
+  }
+  nav {
+    border-bottom: 3px solid $second_color;
+  }
+}
