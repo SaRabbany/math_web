@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap');
+
 //page import
 
 @import "header";
 @import "footer";
 @import "basicSetup";
+@import "home";
 
 
-
+// basic setup for website
+$main_color: #42b983;
+$second_color: #34495e;
+$bg_color: #f3f3f3;
+$border_color: #5864706c;
 
 
 //Question section in top
@@ -151,5 +158,6 @@
     }
   }
 }
+
 
 

@@ -1,7 +1,16 @@
 //navbar section start
+// basic setup for website
+$main_color: #42b983;
+$second_color: #34495e;
+$bg_color: #f3f3f3;
+$border_color: #5864706c;
+
+
+
 .navbar {
   border-bottom: 3px solid $second_color;
   img {
+    
     width: 100px;
   }
   .nav-link {
@@ -15,6 +24,6 @@
     color: $main_color !important;
   }
   nav {
-    border-bottom: 3px solid $second_color;
+    border-bottom: 3px solid #ccc;
   }
 }
