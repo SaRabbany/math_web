@@ -167,6 +167,7 @@ h2 {
 
 h5 {
   font-size: 18px;
+  font-family: Hind Siliguri;
   font-weight: 500;
   color: #34495e;
 }
@@ -178,7 +179,6 @@ p {
 
 header.hero-section {
   background-color: #42b983;
-  height: 100vh;
 }
 
 header.hero-section a {
@@ -200,7 +200,6 @@ header.hero-section a {
   font-family: Hind Siliguri;
   font-weight: 600;
   font-size: 18px;
-  line-height: 29px;
   color: #34495e;
 }
 
@@ -216,7 +215,8 @@ header.hero-section a {
 }
 
 .criteria-section .row .criteria-img {
-  height: 500px;
+  margin: auto;
+  margin-top: 0;
   border-radius: 10px;
   -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -226,25 +226,12 @@ header.hero-section a {
   padding: 0 0 0 20px;
 }
 
-.criteria-section .row .col-md-7 ul li {
-  padding-top: 20px;
-}
-
-.criteria-section .row .col-md-7 ul li i {
-  font-size: 20px;
-  color: #42b983;
-}
-
-.criteria-section .row .col-md-7 ul li span {
-  padding: 0 10px 10px 0;
+.criteria-section .row .col-md-7 p {
   color: #34495e;
-  font-family: Hind Siliguri;
-  font-weight: 500;
-  font-size: 18px;
-}
-
-.criteria-section .row .col-md-7 ul li:first-child {
-  padding-top: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: justify;
 }
 
 .info_content {
@@ -254,12 +241,15 @@ header.hero-section a {
 
 .info_content .info-heading {
   margin: auto;
-  width: 560px;
+  width: 50vw;
   background-color: #fff;
   border-radius: 20px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .info_content .info-heading .info-title {
+  position: relative;
   text-align: center;
   padding: 20px;
 }
@@ -268,6 +258,18 @@ header.hero-section a {
   color: #42b983;
   font-size: 30px;
   margin-bottom: 20px;
+}
+
+.info_content .info-heading .info-title::after {
+  content: " ";
+  bottom: 5%;
+  left: 50%;
+  width: 15vw;
+  border-bottom: 8px solid #42b983;
+  border-radius: 20px;
+  -webkit-transform: translatex(-50%);
+          transform: translatex(-50%);
+  position: absolute;
 }
 
 .info_content .card {
@@ -299,6 +301,19 @@ header.hero-section a {
   transition: all 0.5s ease-in-out;
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 768px) {
+  .info_content .info-heading {
+    width: 90vw;
+  }
+  .info_content .info-heading .info-title::after {
+    width: 30vw;
+  }
+  .criteria-section .row .criteria-img {
+    width: 90%;
+    margin-bottom: 20px;
+  }
 }
 
 .top_question {
